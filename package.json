@@ -4,10 +4,7 @@
   "description": "forked from react-trip-date, fixed Day.tsx single-day handleChange bug",
   "author": "samsam_ahmadi",
   "license": "GPL-3.0",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ArronHsiao/react-trip-date"
-  },
+  "repository": "samsam-ahmadi/react-trip-date",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
