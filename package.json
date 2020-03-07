@@ -1,10 +1,13 @@
 {
-  "name": "react-trip-date",
-  "version": "0.0.3",
-  "description": "date-picker and range-picker for React applications",
+  "name": "react-trip-date-arron",
+  "version": "0.0.4",
+  "description": "forked from react-trip-date, fixed Day.tsx single-day handleChange bug",
   "author": "samsam_ahmadi",
   "license": "GPL-3.0",
-  "repository": "samsam-ahmadi/react-trip-date",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArronHsiao/react-trip-date"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -60,6 +63,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
     "babel-plugin-inline-react-svg": "^1.1.0",
+    "babel-preset-react-app": "^9.1.1",
     "babel-runtime": "^6.26.0",
     "cross-env": "^6.0.3",
     "css-loader": "^3.2.0",
@@ -89,5 +93,15 @@
   },
   "files": [
     "dist"
+  ],
+  "bugs": {
+    "url": "https://github.com/samsam-ahmadi/react-trip-date/issues"
+  },
+  "homepage": "https://github.com/samsam-ahmadi/react-trip-date#readme",
+  "dependencies": {},
+  "keywords": [
+    "forked",
+    "from",
+    "react-trip-date"
   ]
 }

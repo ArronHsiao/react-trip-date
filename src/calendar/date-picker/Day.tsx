@@ -54,6 +54,7 @@ export const Day: React.FunctionComponent<DatePickerDayProps> = ({
     if (numberOfSelectableDays) {
       if (numberOfSelectableDays === 1) {
         setSelectedDays([date]);
+        handleChange([date]);
         return false;
       }
       if (
