@@ -1,6 +1,6 @@
 {
   "name": "react-trip-date",
-  "version": "0.0.4",
+  "version": "0.0.3",
   "description": "forked from react-trip-date, fixed Day.tsx single-day handleChange bug",
   "author": "samsam_ahmadi",
   "license": "GPL-3.0",
@@ -100,8 +100,6 @@
   "homepage": "https://github.com/samsam-ahmadi/react-trip-date#readme",
   "dependencies": {},
   "keywords": [
-    "forked",
-    "from",
     "react-trip-date"
   ]
 }
