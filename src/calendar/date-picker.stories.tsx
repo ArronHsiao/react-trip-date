@@ -8,6 +8,7 @@ import { Day } from './range-picker.stories';
 const stories = storiesOf('Date picker', module);
 
 let selectedDays = ['2019-10-01', '2019-11-06'];
+let markedDays = ['2020-03-09', '2020-03-19', '2020-03-22'];
 let disabledDays = [
   '2019-12-02',
   '2019-11-12',
@@ -32,6 +33,9 @@ export const responsiveChecking = setNumberOfMonth => {
 
 stories
   .add('Simple', () => <DatePicker handleChange={handleChange} />)
+  .add('Marked Days', () => (
+    <DatePicker handleChange={handleChange} markedDays={markedDays} />
+  ))
   .add('Selected Days', () => (
     <DatePicker
       handleChange={handleChange}

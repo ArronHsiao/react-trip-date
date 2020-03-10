@@ -1,8 +1,8 @@
 {
-  "name": "react-trip-date",
-  "version": "0.0.3",
+  "name": "react-trip-date-arron",
+  "version": "0.0.5",
   "description": "forked from react-trip-date, fixed Day.tsx single-day handleChange bug",
-  "author": "samsam_ahmadi",
+  "author": "arron hsiao",
   "license": "GPL-3.0",
   "repository": "samsam-ahmadi/react-trip-date",
   "main": "dist/index.js",

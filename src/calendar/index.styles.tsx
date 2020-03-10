@@ -103,6 +103,43 @@ export const DayStyle = styled.div`
     }
   }
 
+  &.marked {
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 38px;
+    height: 38px;
+    transition: all 0.3s ease-in-out;
+    background-color: ${props => props.theme.underlineColor};
+
+    &:hover {
+      background-color: ${props => props.theme.underlineColor};
+    }
+  }
+
+  &.markedDisable {
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 38px;
+    height: 38px;
+    transition: all 0.3s ease-in-out;
+    background-color: #eee;
+
+    &:hover {
+      cursor: not-allowed;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 15px;
+      height: 2px;
+      background-color: ${props => props.theme.disabledText};
+      transform: rotate(-20deg);
+    }
+  }
+
   &.selected {
     color: #fff;
     background-color: ${props => props.theme.primary};

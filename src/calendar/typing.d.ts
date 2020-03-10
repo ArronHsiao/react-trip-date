@@ -14,6 +14,7 @@ export interface CalendarProps {
   disabled?: boolean;
   hoverable?: boolean;
   selectedDays?: any;
+  markedDays?: string[];
   disabledDays?: string[];
   responsive?: ResponsiveChange;
   dayComponent?:
@@ -46,6 +47,7 @@ export interface DatePickerProps {
   numberOfMonths?: number;
   handleChange?: DatePickerHandleChange;
   selectedDays?: string[];
+  markedDays?: string[];
   numberOfSelectableDays?: number;
   disabledDays?: string[];
   responsive?: ResponsiveChange;

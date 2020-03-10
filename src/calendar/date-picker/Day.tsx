@@ -17,6 +17,7 @@ export const Day: React.FunctionComponent<DatePickerDayProps> = ({
     source,
     handleChange,
     selectedDays,
+    markedDays,
     disabledBeforToday,
     setSelectedDays,
     jalali,
@@ -131,6 +132,13 @@ export const Day: React.FunctionComponent<DatePickerDayProps> = ({
     return selectedDays.includes(date);
   };
 
+  const handleMarkedDate = day => {
+    let date = (dayjs(day, { jalali: jalali } as any, 'YYYY-MM-DD') as any)
+      .calendar(jalali ? 'jalali' : 'gregory')
+      .format('YYYY-MM-DD');
+    return markedDays.includes(date);
+  };
+
   const handleDisabledDate = day => {
     let date = (dayjs(day) as any).format('YYYY-MM-DD');
 
@@ -149,8 +157,10 @@ export const Day: React.FunctionComponent<DatePickerDayProps> = ({
       className={classNames({
         'select-mode': true,
         inactive: day.month() !== source.subtract(-month, 'month').month(),
+        marked: handleMarkedDate(day),
         selected: handleSelectedDate(day),
         disabled: handleDisabledDate(day),
+        markedDisable: handleDisabledDate(day) && handleMarkedDate(day),
         today:
           (dayjs() as any)
             .calendar(jalali ? 'jalali' : 'gregory')
